@@ -37,7 +37,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict \
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}virtualenv>0:devel/py-virtualenv \
 		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox
 
-USES=		python twisted:conch,internet,names,web
+USES=		python twisted:conch,names,web
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 

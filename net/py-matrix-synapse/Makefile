@@ -31,13 +31,20 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict \
 		${PYTHON_PKGNAMEPREFIX}blist>0:devel/py-blist \
 		${PYTHON_PKGNAMEPREFIX}pysaml2>0:security/py-pysaml2 \
 		${PYTHON_PKGNAMEPREFIX}pymacaroons-pynacl>0:security/py-pymacaroons-pynacl \
-		${PYTHON_PKGNAMEPREFIX}simplejson>0:devel/py-simplejson \
+		${PYTHON_PKGNAMEPREFIX}simplejson>dd0:devel/py-simplejson \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}matrix-angular-sdk>0:devel/py-matrix-angular-sdk
+		${PYTHON_PKGNAMEPREFIX}matrix-angular-sdk>0:devel/py-matrix-angular-sdk \
+		${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.3.0:devel/py-msgpack-python \
+		${PYTHON_PKGNAMEPREFIX}matrix-angular-sdk>0:devel/py-matrix-angular-sdk \
+		${PYTHON_PKGNAMEPREFIX}netaddr>=0.7.18:net/py-netaddr \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.8:devel/py-Jinja2 \
+		${PYTHON_PKGNAMEPREFIX}bleach>=1.4.2:www/py-bleach \
+		${PYTHON_PKGNAMEPREFIX}ldap3>=1.0:net/py-ldap3 \
+		${PYTHON_PKGNAMEPREFIX}psutil>=2.0:sysutils/py-psutil
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}virtualenv>0:devel/py-virtualenv \
 		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox
 
-USES=		python twisted:conch,names,web
+USES=		python:2.7 twisted:conch,names,web
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 

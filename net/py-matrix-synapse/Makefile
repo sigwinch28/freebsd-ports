@@ -4,7 +4,7 @@
 PORTNAME=	matrix-synapse
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.18.4
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -15,13 +15,13 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict \
-		${PYTHON_PKGNAMEPREFIX}unpaddedbase64>=1.0.1:devel/py-unpaddedbase64 \
+		${PYTHON_PKGNAMEPREFIX}unpaddedbase64>=1.1.0:devel/py-unpaddedbase64 \
 		${PYTHON_PKGNAMEPREFIX}canonicaljson>=1.0.0:devel/py-canonicaljson \
 		${PYTHON_PKGNAMEPREFIX}signedjson>=1.0.0:security/py-signedjson \
-		${PYTHON_PKGNAMEPREFIX}pynacl>=0.3.0:security/py-pynacl \
+		${PYTHON_PKGNAMEPREFIX}pynacl=0.3.0:security/py-pynacl \
 		${PYTHON_PKGNAMEPREFIX}service_identity>=1.0.0:security/py-service_identity \
 		${PYTHON_PKGNAMEPREFIX}openssl>=0.14:security/py-openssl \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml \
+		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1 \
 		${PYTHON_PKGNAMEPREFIX}daemonize>0:devel/py-daemonize \
 		${PYTHON_PKGNAMEPREFIX}bcrypt>0:security/py-bcrypt \
@@ -29,7 +29,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict \
 		${PYTHON_PKGNAMEPREFIX}pydenticon>0:devel/py-pydenticon \
 		${PYTHON_PKGNAMEPREFIX}ujson>0:devel/py-ujson \
 		${PYTHON_PKGNAMEPREFIX}blist>0:devel/py-blist \
-		${PYTHON_PKGNAMEPREFIX}pysaml2>0:security/py-pysaml2 \
+		${PYTHON_PKGNAMEPREFIX}pysaml2>=3.0.0:security/py-pysaml2 \
 		${PYTHON_PKGNAMEPREFIX}pymacaroons-pynacl>0:security/py-pymacaroons-pynacl \
 		${PYTHON_PKGNAMEPREFIX}simplejson>dd0:devel/py-simplejson \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \

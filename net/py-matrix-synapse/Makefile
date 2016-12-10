@@ -8,7 +8,7 @@ PORTREVISION=	1
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	joe@sigwinch.uk
 COMMENT=	Matrix protocol reference homeserver
 
 LICENSE=	APACHE20
